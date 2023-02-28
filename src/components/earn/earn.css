@@ -1,0 +1,89 @@
+.earn{
+    padding: 3rem 2rem;
+}
+
+.earn .content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.earn .col-2, .earn .col-1{
+    flex-basis: 50%;
+    margin: 10px;
+}
+
+.earn .col-1{
+    max-width: 500px;
+    text-align: center;
+    padding: 20px;
+}
+
+.earn .col-1 img{
+    width: 350px;
+    transition: .5s;
+    box-shadow: 0 0 2px 1px #000;
+    border-radius: 30px;
+}
+
+.earn .col-1 img:hover{
+    transform: scale(1.05);
+}
+
+.earn .col-2{
+    max-width: 500px;
+}
+
+
+.earn input{
+    width: 70%;
+    margin: 20px 5px;
+    outline: 0;
+    padding: 10px;
+    border-radius: 25px 0 25px 0;
+    font-style: italic;
+}
+
+.earn h3{
+    font-size: 35px;
+    margin: 10px 0;
+    font-style: italic;
+}
+
+
+@media screen and (max-width: 700px) {
+    .earn .content{
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .earn .col-2, .earn .col-1{
+        flex-basis: 100%;
+        margin: 10px 0;
+    }
+     
+    .earn .col-1 img{
+        width: 100%;
+    }
+
+    .earn .col-2{
+        margin-top: 20px;
+        padding: 20px 30px;
+    }
+
+    .earn input{
+        margin-bottom: 10px;
+        width: 100%;
+    }
+    
+    .earn button{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .earn h3{
+        font-size: 25px;
+    }
+}

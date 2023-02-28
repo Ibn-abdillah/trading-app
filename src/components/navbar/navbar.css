@@ -1,0 +1,92 @@
+.navbar{
+    padding: 0 2rem;
+    background: lightblue;
+    width: 100%;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 90px;
+}
+
+nav h1{
+    font-size: 35px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.nav-menu{
+    display: flex;
+}
+
+.navbar li{
+    margin: 0 10px;
+}
+
+.navbar a{
+    font-size: 18px;
+}
+
+.hamburger{
+    font-size: 30px;
+    display: none;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 600px) {
+    nav h1{
+        font-size: 25px;
+    }
+    
+    .navbar button{
+        padding: 10px;
+    }
+
+    .nav-menu{
+        flex-direction: column;
+        position: fixed;
+        top: 90px;
+        background: lightblue;
+        width: 50%;
+        height: 100%;
+        left: -50%;
+        text-align: center;
+        transition: .5s;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-menu li{
+        margin-top: 50px;
+    }
+
+    .navbar a{
+        font-weight: bold;
+        font-style: italic;
+    }
+
+    .hamburger{
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .navbar button{
+        padding: 10px ;
+    }
+}
+
+@media screen and (max-width: 330px) {
+    .navbar {
+        padding: 0 10px;
+    }
+    .navbar button{
+        padding: 5px ;
+    }
+}
