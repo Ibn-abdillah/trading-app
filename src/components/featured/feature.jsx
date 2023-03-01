@@ -32,8 +32,7 @@ function Feature() {
         {data.map(data => {
             return <Coincard key={data.id} data={data} />
           })}
-        
-        </div>
+          </div>
       </div>
     </div>
   )
