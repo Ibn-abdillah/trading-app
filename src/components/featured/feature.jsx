@@ -29,9 +29,9 @@ function Feature() {
         </div>
         
         <div className="col-2">
-        {/* {data.map(data => {
-            return <Coincard key={data.id} data={data} />
-          })} */}
+          {data.map(data => {
+             return <Coincard key={data.id} data={data} />
+           })}
           </div>
       </div>
     </div>
