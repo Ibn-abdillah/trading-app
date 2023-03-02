@@ -2,6 +2,7 @@
     padding: 0 2rem;
     background: lightblue;
     width: 100%;
+    position: fixed;
 }
 
 nav{
