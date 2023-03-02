@@ -17,6 +17,8 @@ function Feature() {
         })
     }, [])
 
+    if (!data) return null
+      
     console.log(data);
 
   return (
